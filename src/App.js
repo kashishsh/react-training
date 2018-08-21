@@ -5,7 +5,9 @@ import ClassComponent from './ClassComponent';
 import ComposingComponents from './ComposingComponents';
 import Comment from './comment/Comment';
 import Clock from './Clock';
+import Toggle from './Toggle';
 import './App.css';
+
 
 
 
@@ -13,13 +15,7 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div>
-        <Clock />
-        <Clock />
-        <Clock />
-        <Clock />
-        <Clock />
-      </div>
+      <Toggle />
     );
 
   }
