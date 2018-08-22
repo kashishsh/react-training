@@ -11,6 +11,7 @@ import './App.css';
 import LoginControl from './LoginControl';
 import MailBox from './MailBox';
 import Page from './Page';
+import NumberList from './NumberList';
 
 
 
@@ -18,18 +19,10 @@ import Page from './Page';
 
 
 class App extends Component {
-  messages = [
-    'Test',
-    'Test 2',
-    'Re: Test2'
-  ];
+  numberList = [1,2,3,4];
   render() {
     return (
-      <div>
-        <LoginControl />
-        <MailBox unreadMessages={this.messages}/>
-        <Page />
-      </div>
+      <NumberList items={this.numberList}/>
     );
 
   }
