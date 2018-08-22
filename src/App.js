@@ -6,19 +6,34 @@ import ComposingComponents from './ComposingComponents';
 import Comment from './comment/Comment';
 import Clock from './Clock';
 import Toggle from './Toggle';
+import ConditionalRendering from './ConditionalRendering';
 import './App.css';
+import LoginControl from './LoginControl';
+import MailBox from './MailBox';
+import Page from './Page';
+
 
 
 
 
 
 class App extends Component {
+  messages = [
+    'Test',
+    'Test 2',
+    'Re: Test2'
+  ];
   render() {
     return (
-      <Toggle />
+      <div>
+        <LoginControl />
+        <MailBox unreadMessages={this.messages}/>
+        <Page />
+      </div>
     );
 
   }
 }
 
 export default App;
+
