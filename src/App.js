@@ -12,6 +12,7 @@ import LoginControl from './LoginControl';
 import MailBox from './MailBox';
 import Page from './Page';
 import NumberList from './NumberList';
+import NameForm from './NameForm';
 
 
 
@@ -22,7 +23,7 @@ class App extends Component {
   numberList = [1,2,3,4];
   render() {
     return (
-      <NumberList items={this.numberList}/>
+      <NameForm />
     );
 
   }
