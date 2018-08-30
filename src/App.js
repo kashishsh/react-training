@@ -13,7 +13,7 @@ import MailBox from './MailBox';
 import Page from './Page';
 import NumberList from './NumberList';
 import NameForm from './NameForm';
-
+import Fragments from './Fragments';
 
 
 
@@ -23,7 +23,7 @@ class App extends Component {
   numberList = [1,2,3,4];
   render() {
     return (
-      <NameForm />
+      <Fragments />
     );
 
   }
