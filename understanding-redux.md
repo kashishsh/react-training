@@ -1,0 +1,3 @@
+- Redux is not part of react, It is a seperate javascript library which you can use with any other javascript framework.
+- It makes the state management much easier in React.
+- When you build l
