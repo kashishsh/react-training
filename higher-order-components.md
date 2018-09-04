@@ -1,0 +1,2 @@
+- Higher order components works similar to higher order function. You can extract out the functionality along the components and build and you can build a function. You can pass your component to this function and do something inside and can return a new component.
+- Inside this component you don't actually change the functionality of the component, you rather do minor things like inject new props or translate one prop to another, you can build custom errors or defaults.

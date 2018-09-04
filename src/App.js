@@ -17,18 +17,13 @@ import NumberList from './NumberList';
 import NameForm from './NameForm';
 import Fragments from './Fragments';
 import { connect } from 'react-redux';
+import ButtonOne from './components/ButtonOne';
+
 class App extends Component {
   render() {
     return (
       <div>
-      <div>
-        <div><span>A:</span><span>{this.props.a}</span></div>
-        <button onClick={() => this.props.updateA(this.props.b)}>Update A</button>
-      </div>
-      <div>
-        <div><span>B:</span><span>{this.props.b}</span></div>
-        <button onClick={() => this.props.updateB(this.props.a)}>Update B</button>
-      </div>
+          <ButtonOne disabled test="123"></ButtonOne>
       </div>
     );
   }
